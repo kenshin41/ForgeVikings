@@ -1,0 +1,34 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+h4 {
+  color: #3e91be;
+  font-size: 30px;
+  font-family: PN;
+  text-align: center;
+  line-height: 33px;
+  letter-spacing: 0.45px
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-family: PN;
+  text-align: center;
+  line-height: 52.8px;
+  letter-spacing: 0.45px
+}
+
+body { 
+  fill: #ffffff;
+  background: #171717;
+  opacity: 75.0%;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Century Gothic", Futura, Arial, sans-serif;
+  margin: 0;
+  color: white;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 1rem;  
+}
+
+
