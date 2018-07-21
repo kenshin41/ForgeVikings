@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'vikings-kattegat',
   templateUrl: './kattegat.component.html'
 })
+
 export class KattegatComponent {
   
   showListSword: boolean = false;
@@ -34,4 +37,13 @@ export class KattegatComponent {
     {value: 'almadana'},
     {value: 'estoque'},
   ];
+  constructor(private route: ActivatedRoute, private router: Router) { }
+
+  OnInit() {
+
+  }
+
+  goToLogin() {
+    this.router.navigate(['logeo']);
+  }
 }

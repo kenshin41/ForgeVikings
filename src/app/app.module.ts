@@ -10,12 +10,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { KattegatComponent } from './kattegat/kattegat.component';
-import { Routes, RouterModule } from '@angular/router';
+import { LogeoComponent } from './Logeo/logeo.component';
 
+import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
   { path: 'kattegat', component: KattegatComponent},
   { path: 'gallery', component: GalleryComponent},
+  { path: 'logeo', component: LogeoComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'kattegat' }
 ];
 
@@ -23,14 +25,15 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     KattegatComponent,
-    GalleryComponent
+    GalleryComponent,
+    LogeoComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    FormsModule,
+    ReactiveFormsModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
