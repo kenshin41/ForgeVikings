@@ -1,9 +1,163 @@
-<!-- <span>
-    <div class="row mb-4">
-        <div *ngFor="let sword of swordTypes">
-            <div class="col-sm" style="padding:0.25rem;">
-                <button mat-button class="secondaryButtonMenu">{{sword.value}}</button>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="index.html">
+        <img src="./../../assets/logo.svg" width="30" class="d-inline-block align-top" alt="Logo Bootstrap">
+    </a>
+    <button mat-button class="primaryButtonMenu mr-3" (click)="showListSword = !showListSword">KATTEGAT MARTKET</button>
+    <button mat-button class="primaryButtonMenu" (click)="showListSword = !showListSword">FRIKI MARTKET</button>
+    
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item"> 
+                    <button mat-button class="secondaryButtonMenu">Información</button>
+                
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--HEADER-->
+<!-- TODO: hacer el header comun para todos los componentes -->
+
+<div class="row mt-5">
+    <div class="col-sm d-flex">
+        <div class="col-sm">
+            <!-- <button mat-button class="primaryButtonMenu" (click)="showListSword = !showListSword">KATTEGAT MARTKET</button> -->
+        </div>
+        <div class="col-sm">
+            <!-- <button mat-button class="primaryButtonMenu" (click)="showListSword = !showListSword">FRIKI MARTKET</button> -->
         </div>
     </div>
-</span> -->
+    <div class="col-sm">
+        <h1>WELCOME TO VIKINGS</h1>
+        <span *ngIf="showListSword">
+            <div class="row mb-4">
+                <div *ngFor="let sword of swordTypes">
+                    <div class="col-sm" style="padding:0.25rem;">
+                        <button mat-button class="secondaryButtonMenu">{{sword.value}}</button>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+    <div class="col-sm d-flex justify-content-end">
+        <div>
+            <!-- TODO:: ver donde se pone o quitar -->
+            <!-- <button mat-button class="secondaryButtonMenu">Información</button> -->
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <h4>THE WORLD WHERE YOU ARE LIKE YOU WANT</h4>
+        <div>
+            <img class="widthGeneral" src="./../assets/Vikings/FondoVikings.jpg" />
+        </div>
+    </div>
+</div>
+<!--END HEADER-->
+
+<!--CONTENT-->
+<div>
+    <div class="row justify-content-center">
+        <h4 class="mt-5">LO MAS VISTO</h4>
+    </div>
+    <div class="row justify-content-center"><div class="row mt-5 ">
+        <div class="col-md d-flex">
+            <div class="card mr-2" style="width: 18rem;">
+                <img class="card-img-top imgVikingsGallery" src="./../../assets/herreria/espada1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mr-2" style="width: 18rem;">
+                <img class="card-img-top imgVikingsGallery" src="./../../assets/herreria/hacha1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mr-2" style="width: 18rem;">
+                <img class="card-img-top imgVikingsGallery" src="./../../assets/herreria/herreria1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mr-2" style="width: 18rem;">
+                <img class="card-img-top imgVikingsGallery" src="./../../assets/herreria/madera1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card mr-2" style="width: 18rem;">
+                <img class="card-img-top imgVikingsGallery" src="./../../assets/herreria/katana1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+</div>
+<!--END CONTENT-->
+
+<!--FOOTER-->
+<!-- TODO: hacer el footer comun para todos los componentes -->
+<div class="row mt-5 d-flex">
+    <div class="col-md justify-content-start">
+        <span>Herreria artesanal, todo realizado a mano y personalizado.</span>
+        <br>
+        <span>Visita nuestra tienda o mira nuestro catalogos online.</span>
+        <br>
+        <span>Tour en taller para lo mas curiosos con un pequeño obsequio.</span>
+        <br>
+    </div>
+
+    <div class="col-md d-flex justify-content-end">
+        <div class="mr-5">
+            <span>Dirección:</span>
+            <br>
+            <span>Sangonera la Verde</span>
+            <br>
+            <span>C/: Los quicos Nº: 31.</span>
+            <br>
+            <span>CP: 30833.</span> &nbsp;
+            <span>Murcia</span>
+            <br>
+        </div>
+        <div>
+            <h5>Links</h5>
+            <ul>
+                <li>
+                    <a href="#">Link 1 bastante mas largo para ver como queda</a>
+                </li>
+                <li>
+                    <a href="#">Link 2 medianamente larguito</a>
+                </li>
+                <li>
+                    <a href="#">Link 3 otro cortico</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!--Copyright-->
+<div class="footer-copyright text-center py-3">
+    <div class="container-fluid">
+        © 2017 Copyright:
+        <a href=""> MDBootstrap.com </a>
+    </div>
+</div>
+<!--/.Copyright-->
+<!--END FOOTER-->
