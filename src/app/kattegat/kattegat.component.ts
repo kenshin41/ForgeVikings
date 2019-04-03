@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router'; 
 
